@@ -25,3 +25,24 @@ ALTER TABLE person ALTER COLUMN age SET NOT NULL;
 
 -- Modify Table (remove Constraints)
 ALTER TABLE person ALTER COLUMN age DROP NOT NULL;
+
+-- Modify Table (add constraints using "ADD CONSTRAINT")
+ALTER TABLE person ADD constraint unique_person_age UNIQUE (age);
+
+ALTER TABLE person ADD constraint pk_person_email UNIQUE (email);
+
+-- Modify Table (remove constraints using "DROP CONSTRAINT")
+ALTER TABLE person DROP constraint unique_person_age;
+
+ALTER TABLE person DROP constraint pk_person_email;
+
+-- Modify Table (DROP all data from table, along with the table itself) ❌
+DROP Table person3;
+
+-- Modify Table (DROP all data from table, keep table structure)
+TRUNCATE TABLE person;
+
+--
+--
+--
+SELECT * FROM person3;
