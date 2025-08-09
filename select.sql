@@ -54,13 +54,15 @@ WHERE (
     AND age = 18;
 
 -- SELECT conditionally using WHERE (arithmetic operators)
--- Grater Than (>)
+-- Greater Than (>)
 SELECT * FROM students WHERE age > 18;
--- Grater Than or Equal (>=)
+-- Greater Than or Equal (>=)
 SELECT * FROM students WHERE age >= 18;
 -- Less Than (<)
 SELECT * FROM students WHERE age < 18;
 -- Less Than or Equal (<=)
 SELECT * FROM students WHERE age <= 18;
--- Not Equal (<>) [Less Than or Grater than]
+-- Not Equal (<>) [Less Than or Greater than]
 SELECT * FROM students WHERE age <> 18;
+
+--

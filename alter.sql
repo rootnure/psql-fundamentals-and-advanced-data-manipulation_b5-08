@@ -3,6 +3,15 @@
 -- Testing connection and extension
 SELECT * FROM person;
 
+-- Inserting some data
+INSERT INTO
+    person (u_id, username, age)
+VALUES (1, 'nur', 27),
+    (2, 'rifat', 27),
+    (3, 'hridoy', 22),
+    (4, 'sakib', 25),
+    (5, 'shafin', 26);
+
 -- Modify Table (add column)
 ALTER TABLE person
 ADD COLUMN email VARCHAR(35) DEFAULT 'user@mail.address' NOT NULL;
@@ -12,7 +21,7 @@ INSERT INTO person VALUES ( 6, 'sakib', 37, 'sakib@khan.raw' );
 
 -- Delete a column
 -- ALTER TABLE person ADD COLUMN emali VARCHAR(25) DEFAULT 'email@mail.co' NOT NULL;
-ALTER Table person DROP COLUMN emali;
+ALTER Table person DROP COLUMN email;
 
 -- Modify Table (rename column)
 ALTER TABLE person RENAME COLUMN user_name TO username;
